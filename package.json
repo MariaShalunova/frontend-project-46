@@ -1,14 +1,23 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/MariaShalunova/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MariaShalunova/frontend-project-46/actions)",
-  "main": "gendiff.js",
+  "description": "Project: Difference Calculator",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Maria Shalunova",
   "license": "ISC",
+  "type": "module",
+  "bin": {
+    "gendiff": "gendiff.js"
+  },
   "dependencies": {
     "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "eslint": "^9.4.0",
+    "globals": "^15.4.0",
+    "prettier": "3.3.2"
   }
 }
