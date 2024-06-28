@@ -14,4 +14,4 @@ const parse = (file, extension) => {
   }
 };
 
-export { parse };
+export default parse;
