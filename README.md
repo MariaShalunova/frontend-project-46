@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 
-[![Actions Status](https://github.com/MariaShalunova/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/21799b9b91a51650a367/maintainability)](https://codeclimate.com/github/MariaShalunova/frontend-project-46/maintainability)](https://github.com/MariaShalunova/frontend-project-46/actions)
+[![Actions Status](https://github.com/MariaShalunova/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg) ](https://github.com/MariaShalunova/frontend-project-46/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/21799b9b91a51650a367/maintainability)](https://codeclimate.com/github/MariaShalunova/frontend-project-46/maintainability)
 
 ### Building backend-project-44
 
