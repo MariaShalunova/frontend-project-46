@@ -11,7 +11,7 @@ cd frontend-project-46
 make install | npm ci
 ```
 
-## Start compare from dir: '__fixtures__':
+## Start compare from dir: '\_\_fixtures\_\_':
 
 ```sh
 make run | file1.json file2.json
