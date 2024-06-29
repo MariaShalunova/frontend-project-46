@@ -10,5 +10,5 @@ test:
 run:
 	gendiff file1.json file2.json
 
-fix:
+lint:
 	npx eslint --fix .
