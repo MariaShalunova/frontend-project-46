@@ -4,11 +4,12 @@ install:
 help:
 	node bin\gendiff.js -h
 
-test:
-	gendiff '.\__fixtures__\file1.json' '.\__fixtures__\file2.json'
+tests:
+	npm test --watchAll
+	npx jest --coverage
 
 run:
-	gendiff file1.json file2.json
+	gendiff '.\__fixtures__\file1.json' '.\__fixtures__\file2.json'
 
 lint:
 	npx eslint --fix .
