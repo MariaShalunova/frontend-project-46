@@ -2,7 +2,7 @@
 import { readFileSync} from 'fs';
 import { resolve, extname } from 'path';
 import { cwd } from 'process';
-import parse from './parser.js';
+import parse from './parsers.js';
 import compare from './compare.js';
 
 const getPath = (filepath) => resolve(cwd(), filepath);

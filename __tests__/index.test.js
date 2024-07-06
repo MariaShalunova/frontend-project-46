@@ -18,3 +18,53 @@ test('Comparison check: file1.json === file2.json', () => {
 
   expect(received).toEqual(expected);
 });
+
+test('Comparison check: file1.yaml === file2.yaml', () => {
+  const file1 = getFixturePath('file1.yaml');
+  const file2 = getFixturePath('file2.yaml');
+
+  const received = genDiff(file1, file2);
+  const expected = readFile('testResult.txt');
+
+  expect(received).toEqual(expected);
+});
+
+test('Comparison check: file1.yml === file2.yml', () => {
+  const file1 = getFixturePath('file1.yml');
+  const file2 = getFixturePath('file2.yml');
+
+  const received = genDiff(file1, file2);
+  const expected = readFile('testResult.txt');
+
+  expect(received).toEqual(expected);
+});
+
+test('Comparison check: file1.json === file2.yaml', () => {
+  const file1 = getFixturePath('file1.json');
+  const file2 = getFixturePath('file2.yaml');
+
+  const received = genDiff(file1, file2);
+  const expected = readFile('testResult.txt');
+
+  expect(received).toEqual(expected);
+});
+
+test('Comparison check: file1.json === file2.yml', () => {
+  const file1 = getFixturePath('file1.json');
+  const file2 = getFixturePath('file2.json');
+
+  const received = genDiff(file1, file2);
+  const expected = readFile('testResult.txt');
+
+  expect(received).toEqual(expected);
+});
+
+test('Comparison check: file1.yaml === file2.yml', () => {
+  const file1 = getFixturePath('file1.json');
+  const file2 = getFixturePath('file2.json');
+
+  const received = genDiff(file1, file2);
+  const expected = readFile('testResult.txt');
+
+  expect(received).toEqual(expected);
+});
