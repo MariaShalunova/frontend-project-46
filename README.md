@@ -21,5 +21,5 @@ make run
 make tests
 ```
 
-# Example comparing file.json with file.yml
-[![asciicast](https://asciinema.org/a/Uv90WXAIs0A0My1tO1W6j8b78.svg)](https://asciinema.org/a/Uv90WXAIs0A0My1tO1W6j8b78)
+### Example comparing file.json with file.yml
+[![asciicast](https://asciinema.org/a/xGBtu837j0Vx7PCuVemF76fma.svg)](https://asciinema.org/a/xGBtu837j0Vx7PCuVemF76fma)
