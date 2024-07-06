@@ -9,7 +9,7 @@ const getPath = (filepath) => resolve(cwd(), filepath);
 const readFile = (filepath) => readFileSync(getPath(filepath), 'utf-8');
 const getExtension = (filepath) => extname(filepath);
 
-const genDiff = (filepath1, filepath2, format = 'stylish') => {
+const genDiff = (filepath1, filepath2) => {
   const obj1 = parse(readFile(filepath1), getExtension(filepath1));
   const obj2 = parse(readFile(filepath2), getExtension(filepath2));
 
