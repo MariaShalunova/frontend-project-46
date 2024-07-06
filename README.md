@@ -20,3 +20,6 @@ make run
 ```sh
 make tests
 ```
+
+# Example comparing file.json with file.yml
+[![asciicast](https://asciinema.org/a/Uv90WXAIs0A0My1tO1W6j8b78.svg)](https://asciinema.org/a/Uv90WXAIs0A0My1tO1W6j8b78)
