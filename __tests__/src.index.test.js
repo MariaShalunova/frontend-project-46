@@ -13,22 +13,9 @@ const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 const testData = [
   ['file1.json', 'file2.json', 'stylish', 'expectedResultStylish.txt'],
   ['file1.yaml', 'file2.yaml', 'stylish', 'expectedResultStylish.txt'],
-  ['file1.yml', 'file2.yml', 'stylish', 'expectedResultStylish.txt'],
-  ['file1.json', 'file2.yaml', 'stylish', 'expectedResultStylish.txt'],
-  ['file1.json', 'file2.yml', 'stylish', 'expectedResultStylish.txt'],
-  ['file1.yaml', 'file2.yml', 'stylish', 'expectedResultStylish.txt'],
-  
-//   ['file1.json', 'file2.json', 'plain', 'expectedResultPlain.txt'],
-//   ['file1.yaml', 'file2.yaml', 'plain', 'expectedResultPlain.txt'],
-//   ['file1.yml', 'file2.yml', 'plain', 'expectedResultPlain.txt'],
-//   ['file1.json', 'file2.yaml', 'plain', 'expectedResultPlain.txt'],
-//   ['file1.json', 'file2.yml', 'plain', 'expectedResultPlain.txt'],
-//   ['file1.yaml', 'file2.yml', 'plain', 'expectedResultPlain.txt'],
+  ['file1.yml', 'file2.yml', 'plain', 'expectedResultPlain.txt'],
+  ['file1.json', 'file2.yaml', 'plain', 'expectedResultPlain.txt']
 
-//   ['file1.json', 'file2.json', 'json', 'expectedResultJson.txt'],
-//   ['file1.yaml', 'file2.yaml', 'json', 'expectedResultJson.txt'],
-//   ['file1.yml', 'file2.yml', 'json', 'expectedResultJson.txt'],
-//   ['file1.json', 'file2.yaml', 'json', 'expectedResultJson.txt'],
 //   ['file1.json', 'file2.yml', 'json', 'expectedResultJson.txt'],
 //   ['file1.yaml', 'file2.yml', 'json', 'expectedResultJson.txt']
 ]
