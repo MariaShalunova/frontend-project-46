@@ -4,7 +4,12 @@ const formatValue = (value) => {
   if (typeof value === 'object' && value !== null) {
     return '[complex value]';
   }
-  return typeof value === 'string' ? `'${value}'` : value;
+  
+  if (typeof value === 'string') {
+    return `'${value}'`;
+  }
+  
+  return value;
 };
 
 const formatItem = (item, path) => {
