@@ -11,7 +11,7 @@ const compareDeep = (obj1, obj2) => {
         key,
         children: compareDeep(obj1[key], obj2[key]),
         type: 'nested',
-      }
+      };
     }
 
     if (!_.has(obj1, key) && _.has(obj2, key)) {
@@ -19,31 +19,31 @@ const compareDeep = (obj1, obj2) => {
         key,
         value: obj2[key],
         type: 'added',
-      }
-    } 
-    
+      };
+    }
+
     if (_.has(obj1, key) && !_.has(obj2, key)) {
       return {
         key,
         value: obj1[key],
         type: 'deleted',
-      }
-    } 
-    
+      };
+    }
+
     if (!_.isEqual(obj1[key], obj2[key])) {
       return {
         key,
         value1: obj1[key],
         value2: obj2[key],
         type: 'changed',
-      }
+      };
     }
-    
+
     return {
       key,
       value: obj1[key],
       type: 'unchanged',
-    }
+    };
   });
 };
 

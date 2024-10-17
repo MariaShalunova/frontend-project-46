@@ -1,14 +1,12 @@
-import _ from 'lodash';
-
 const formatValue = (value) => {
   if (typeof value === 'object' && value !== null) {
     return '[complex value]';
   }
-  
+
   if (typeof value === 'string') {
     return `'${value}'`;
   }
-  
+
   return value;
 };
 
@@ -31,8 +29,8 @@ const formatItem = (item, path) => {
 
 const plain = (diff, path = '') => {
   const result = diff
-    .filter(item => item.type !== 'unchanged')
-    .map(item => formatItem(item, path));
+    .filter((item) => item.type !== 'unchanged')
+    .map((item) => formatItem(item, path));
 
   return result.join('\n');
 };

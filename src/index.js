@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import { readFileSync} from 'fs';
+import { readFileSync } from 'fs';
 import path from 'path';
 import { cwd } from 'process';
 import parse from './parsers.js';
