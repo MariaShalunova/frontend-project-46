@@ -10,28 +10,28 @@ cd frontend-project-46
 make install
 ```
 
-## Help
+### Help
 To get information about the available options and how to use a command, run the following command:
 ```
 make help
 ```
 
-## Start comparing two files with "stylish" output
+### Start comparing two files with "stylish" output
 ```sh
 make runStylish
 ```
 
-## Start comparing two files with "plain" output
+### Start comparing two files with "plain" output
 ```sh
 make runPlain
 ```
 
-## Start comparing two JSON files with "runJson" output
+### Start comparing two JSON files with "runJson" output
 ```sh
 make runStylish
 ```
 
-## Start tests
+### Start tests
 ```sh
 make tests
 ```
