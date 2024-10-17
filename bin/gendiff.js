@@ -9,7 +9,7 @@ program
   .version('1.0.0')
   .usage('[options] <first_config> <second_config>')
   .description('Compares two configuration files and shows a difference.')
-  .option('-f, --format [type]', 'output format')
+  .option('-f, --format <type>', 'output format (options: stylish, plain, json)', 'stylish')
   .helpOption('-h, --help', 'output usage information')
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
