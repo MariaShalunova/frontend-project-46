@@ -10,8 +10,8 @@ program
   .description('Compares two configuration files and shows a difference.')
   .option('-f, --format [type]', 'output format (options: stylish, plain, json)')
   .arguments('<filepath1> <filepath2>')
-  .action((filepath1, filepath2) => {
-    const diff = gendiff(filepath1, filepath2, program.opts().format);
+  .action((filepath1, filepath2, options) => {
+    const diff = gendiff(filepath1, filepath2, options.format);
     console.log(diff);
   });
 
