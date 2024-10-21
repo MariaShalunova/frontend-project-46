@@ -34,7 +34,7 @@ const stringify = (value, depth) => {
 
   const { currentIndent } = getIndent(depth);
   const lines = Object.entries(value).map(
-    ([key, val]) => `${currentIndent}${key}: ${stringify(val, depth + 1)}`
+    ([key, val]) => `${currentIndent}${key}: ${stringify(val, depth + 1)}`,
   );
 
   return formatBraces(lines, depth);
@@ -42,7 +42,9 @@ const stringify = (value, depth) => {
 
 // Основная функция форматирования
 const stylish = (node, depth = 1) => {
-  const result = node.map(({ key, value, type, value1, value2, children }) => {
+  const result = node.map(({
+    key, value, type, value1, value2, children,
+  }) => {
     const { currentIndent } = getIndent(depth, 1);
 
     switch (type) {
