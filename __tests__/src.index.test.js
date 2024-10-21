@@ -31,7 +31,6 @@ describe.each(testData)('Comparison check:', (fileName1, fileName2, format, expe
   });
 });
 
-
 test(`Comparison check default format`, () => {
   const file1 = getFixturePath('file1.json');
   const file2 = getFixturePath('file2.json');

@@ -14,9 +14,9 @@ const gendiff = (filepath1, filepath2, format = 'stylish') => {
   const obj1 = parse(readFile(filepath1), getExtension(filepath1));
   const obj2 = parse(readFile(filepath2), getExtension(filepath2));
 
-  const result = compareDeep(obj1, obj2);
+  const diffTree = compareDeep(obj1, obj2);
 
-  return formatter(result, format);
+  return formatter(diffTree, format);
 };
 
 export default gendiff;
