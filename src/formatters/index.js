@@ -1,6 +1,5 @@
 import stylish from './stylish.js';
 import plain from './plain.js';
-import json from './json.js';
 
 const formatter = (node, format) => {
   switch (format) {
@@ -11,7 +10,7 @@ const formatter = (node, format) => {
       return plain(node);
 
     case 'json':
-      return json(node);
+      return JSON.stringify(node);
 
     default:
       throw new Error(`Unknown format: '${format}'`);
