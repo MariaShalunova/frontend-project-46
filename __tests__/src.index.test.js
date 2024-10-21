@@ -30,3 +30,14 @@ describe.each(testData)('Comparison check:', (fileName1, fileName2, format, expe
     expect(received).toEqual(expected);
   });
 });
+
+
+test(`Comparison check default format`, () => {
+  const file1 = getFixturePath('file1.json');
+  const file2 = getFixturePath('file2.json');
+
+  const received = gendiff(file1, file2);
+  const expected = readFile('expectedResultStylish.txt');
+
+  expect(received).toEqual(expected);
+});
