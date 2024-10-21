@@ -3,13 +3,13 @@ import YAML from 'js-yaml';
 
 const parse = (file, extension) => {
   switch (extension) {
-    case '.json':
+    case 'json':
       return JSON.parse(file);
 
-    case '.yaml':
+    case 'yaml':
       return YAML.load(file);
 
-    case '.yml':
+    case 'yml':
       return YAML.load(file);
 
     default:
