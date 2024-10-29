@@ -7,8 +7,6 @@ const parse = (file, extension) => {
       return JSON.parse(file);
 
     case 'yaml':
-      return YAML.load(file);
-
     case 'yml':
       return YAML.load(file);
 
